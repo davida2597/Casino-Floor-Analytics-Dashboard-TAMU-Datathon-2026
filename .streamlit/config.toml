@@ -1,0 +1,14 @@
+# Streamlit Community Cloud theme
+# Keep the app in light mode so the dashboard's white cards and Plotly charts
+# retain the same contrast as the locally designed version.
+
+[theme]
+base = "light"
+primaryColor = "#B58A45"
+backgroundColor = "#F5F3EE"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#182333"
+font = "sans serif"
+
+[server]
+headless = true

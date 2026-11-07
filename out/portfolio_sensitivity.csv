@@ -1,0 +1,4 @@
+scenario,types,n_units,spend,expected_gain,net,unspent,beats_doing_nothing
+low,,0,0.0,0.0,0.0,100000.0,False
+base,"inspect, zone_signage",3,16200.0,19016.337364640884,2816.3373646408836,83800.0,True
+high,"inspect, zone_signage",3,16200.0,56179.859262430946,39979.859262430946,83800.0,True

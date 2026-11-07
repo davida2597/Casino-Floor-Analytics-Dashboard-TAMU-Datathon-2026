@@ -1,0 +1,31 @@
+{
+  "window": [
+    "2025-01-01",
+    "2025-06-30"
+  ],
+  "retention_assumption": 0.45,
+  "action_types": [
+    "inspect",
+    "zone_signage"
+  ],
+  "n_units": 3,
+  "spend": 16200.0,
+  "unspent": 83800.0,
+  "expected_gain": 19016.34,
+  "net": 2816.34,
+  "beats_doing_nothing": true,
+  "model_mae": {
+    "model_gbm": 0.2219797260978621,
+    "baseline_constant": 0.33767909955889097,
+    "baseline_weekday": 0.3041784637190558,
+    "baseline_gs_weekday": 0.26556837899512026
+  },
+  "leakage_notes": [
+    "Split is by calendar date, not random [2]",
+    "lag7/lag28 use shift(1) so the prediction date is excluded [2]",
+    "house_win and payout are never predictors \u2014 they carry luck",
+    "Baselines frozen on Jan-Apr before touching May-Jun [2]"
+  ],
+  "location_model_r2": 0.5158,
+  "n_movers": 4
+}

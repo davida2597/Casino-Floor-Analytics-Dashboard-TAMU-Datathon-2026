@@ -1,0 +1,5 @@
+name,mae_log,mae_usd_per_hr,beats_best_baseline
+model_gbm,0.2219797260978621,36.56475728249787,True
+baseline_constant,0.33767909955889097,57.38213749820763,False
+baseline_weekday,0.3041784637190558,51.31962411726151,False
+baseline_gs_weekday,0.26556837899512026,43.76238026093041,True

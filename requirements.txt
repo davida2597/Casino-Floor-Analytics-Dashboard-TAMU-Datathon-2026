@@ -4,5 +4,5 @@ pandas
 numpy
 plotly
 duckdb
-sklearn
+scikit-learn
 scipy

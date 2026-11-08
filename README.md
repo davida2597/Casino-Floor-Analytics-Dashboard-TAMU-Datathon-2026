@@ -1,6 +1,7 @@
 ## Open the dashboard
 
 Public URL: casino-floor-analytics-dashboard-tamu.streamlit.app
+
 Note: URL may be blocked by TAMU firewall.
 
 ## Run locally

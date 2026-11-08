@@ -1,6 +1,5 @@
-# Streamlit Community Cloud theme
-# Keep the app in light mode so the dashboard's white cards and Plotly charts
-# retain the same contrast as the locally designed version.
+# Gilded Ace — Streamlit Community Cloud theme
+# Main dashboard stays light; sidebar and its widgets use a coordinated dark theme.
 
 [theme]
 base = "light"
@@ -9,6 +8,14 @@ backgroundColor = "#F5F3EE"
 secondaryBackgroundColor = "#FFFFFF"
 textColor = "#182333"
 font = "sans serif"
+showWidgetBorder = true
+showSidebarBorder = true
+borderColor = "#E5E0D6"
 
-[server]
-headless = true
+[theme.sidebar]
+primaryColor = "#D5B77D"
+backgroundColor = "#172638"
+secondaryBackgroundColor = "#263B51"
+textColor = "#F4F6F8"
+borderColor = "#52677E"
+showWidgetBorder = true

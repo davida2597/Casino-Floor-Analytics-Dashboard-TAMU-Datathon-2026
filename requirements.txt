@@ -6,3 +6,6 @@ plotly
 duckdb
 scikit-learn
 scipy
+pyarrow
+plotly
+tabulate

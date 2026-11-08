@@ -145,6 +145,59 @@ st.markdown("""
 [data-testid="stExpander"] [data-testid="stMarkdownContainer"] strong,
 [data-testid="stExpander"] [data-testid="stMarkdownContainer"] li { color:#26374a !important; }
 [data-testid="stDownloadButton"] { margin-top:.2rem; }
+
+/* Sidebar controls: explicitly style BaseWeb's nested elements. Streamlit's
+   default light widget surfaces otherwise remain white against the navy rail. */
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"],
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] label p {
+  color:#d5dee8 !important;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] > div,
+[data-testid="stSidebar"] [data-baseweb="input"] > div,
+[data-testid="stSidebar"] [data-testid="stDateInput"] > div,
+[data-testid="stSidebar"] [data-testid="stDateInput"] input,
+[data-testid="stSidebar"] [data-testid="stDateInput"] [data-baseweb="input"] > div {
+  background-color:#263b51 !important;
+  border-color:#52677e !important;
+  color:#f4f6f8 !important;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] *,
+[data-testid="stSidebar"] [data-baseweb="input"] *,
+[data-testid="stSidebar"] [data-testid="stDateInput"] input {
+  color:#f4f6f8 !important;
+  -webkit-text-fill-color:#f4f6f8 !important;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] svg {
+  fill:#d5dee8 !important;
+  color:#d5dee8 !important;
+}
+[data-testid="stSidebar"] input::placeholder {
+  color:#b8c4d1 !important;
+  -webkit-text-fill-color:#b8c4d1 !important;
+}
+/* Select menus can be rendered outside the sidebar DOM, so target the
+   BaseWeb menu itself as well as its option rows. */
+[data-baseweb="popover"] [data-baseweb="menu"],
+[data-baseweb="menu"] {
+  background-color:#203449 !important;
+  border:1px solid #52677e !important;
+}
+[data-baseweb="menu"] [role="option"] {
+  background-color:#203449 !important;
+  color:#f4f6f8 !important;
+}
+[data-baseweb="menu"] [role="option"] * {
+  color:#f4f6f8 !important;
+}
+[data-baseweb="menu"] [role="option"]:hover,
+[data-baseweb="menu"] [role="option"][aria-selected="true"] {
+  background-color:#38516b !important;
+}
+[data-testid="stSidebar"] [data-testid="stSlider"] [data-baseweb="slider"] div {
+  color:#f4f6f8;
+}
 @media (max-width: 760px) {
   .block-container { padding-left:1rem; padding-right:1rem; }
   h1 { font-size:1.85rem !important; }
